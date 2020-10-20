@@ -1,0 +1,15 @@
+:root {
+	--font-size: 32px;
+	--text-color: #000000;
+	--page-color: #ffd600;
+}
+
+body {
+	font-size: var(--font-size);
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	border: 2px solid #000000;
+	padding: 10px 15px;
+	color: var(--text-color);
+	background-color: var(--page-color);
+}

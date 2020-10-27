@@ -13,10 +13,9 @@ let pokemonRepository = (function () {
 		if (typeof pokemon !== "object") {
 			return 0;
 		}
-	}
 	// Pushes new objects after passing the type conditional above
 	pokemonList.push(pokemon);
-}
+	}
 
 	// Provides access to data
 	function getAll() {

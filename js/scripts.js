@@ -9,7 +9,7 @@ let pokemonRepository = (function () {
 	
 	// Adds new objects to pokemonList
 	function add(pokemon) {
-		// Ensures only objects are added. Bonus task!!!
+		// Ensures only objects are added
 		if (typeof pokemon !== "object") {
 			return 0;
 		}
@@ -22,17 +22,31 @@ let pokemonRepository = (function () {
 		return pokemonList;
 	}
 	
+	function addListItem(pokemon) {
+		let pokemonList = document.querySelector('.pokemon-list');
+		let listItem = document.createElement('li');
+		let button = document.createElement('button');
+		button.innerText = pokemon.name;
+		button.classList.add('button');
+		listItem.appendChild(button);
+		pokemonList.appendChild(listItem);
+		button.addEventListener("click", function (event) {
+			showDetails(pokemon);
+		});
+	}
+	
+	function showDetails(pokemon) {
+		console.log(pokemon.name);
+	}
+	
 	// Provides access to functions
 	return {
 		add: add,
 		getAll: getAll,
+		addListItem: addListItem
 	};
 })();
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-  if (pokemon.height > 1.3) {
-	document.write(`<p> ${pokemon.name} (height: ${pokemon.height}) - Wow! That's big!</p>`);
-  } else {
-	document.write(`<p> ${pokemon.name} (height: ${pokemon.height}) </p>`);
-  }
+	pokemonRepository.addListItem(pokemon);
 });

@@ -1,15 +1,27 @@
-:root {
-	--font-size: 32px;
-	--text-color: #000000;
-	--page-color: #ffd600;
-}
-
 body {
-	font-size: var(--font-size);
+	font-size: 32px;
 	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
-	border: 2px solid #000000;
 	padding: 10px 15px;
-	color: var(--text-color);
-	background-color: var(--page-color);
+	color: #000000;
+}
+
+.button {
+  font-size: 30px;
+  background-color: lightgray;
+  padding: 16px 32px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.button:hover {
+  font-size: 30px;
+  background-color: yellow;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
 }

@@ -17,11 +17,11 @@ let pokemonRepository = (function () {
 		button.innerText = pokemon.name;
 		button.classList.add('button');
 		listItem.appendChild(button);
-		pokemonList.appendChild(listItem);
+		list.appendChild(listItem);
 		button.addEventListener("click", function (event) {
-			showDetails(pokemon);
+		showDetails(pokemon);
 		});
-	}
+		}
 	
 	function loadList() {
 		return fetch(apiUrl).then(function (response) {

@@ -1,93 +1,79 @@
-* {
-  box-sizing: border-box;
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #FFDE00;
 }
 
-body {
-  font-family: "Roboto", serif;
-  color: #000;
+.btn {
   background-color: whitesmoke;
-}
-
-h1 {
-  text-align: center;
-}
-
-.button-class {
-  border: 3px solid black;
-  background-color: lightyellow;
+  border: 1px solid black;
   color: black;
-  font-weight: bold;
-  font-size: 15px;
-  display: inline-block;
-  margin: 5px 10px;
-  padding: 15px 30px;
+  padding: 8px 16px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  transition-duration: 0.1s;
   cursor: pointer;
-  width: 250px;
-  height: 60px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 175px;
 }
 
-.button-class:hover,
-.button-class:focus {
-  font-size: 17px;
+.btn:hover {
+  background-color: #CC0000;
+  border: 1px solid black;
 }
 
-.pokemon-list {
-  display: inline;
+ul {
   list-style-type: none;
   text-align: center;
 }
 
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
-  /* Shows modal above other content */
-  z-index: 999;
-
-  /* Allows scrolling if the screen isn't high enough */
-  overflow: auto;
-
-  /* Centers the modal */
-  display: grid;
+.modal-title {
   text-align: center;
+  text-transform: uppercase;
 }
 
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: lightgrey;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
-  border-radius: 20px;
+.modal-body {
+  background-color: whitesmoke;
 }
 
-.closed-modal {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: grey;
-  text-decoration: underline;
+.modal-footer {
+  background-color: whitesmoke;
 }
 
-.modal h2 {
-  margin-top: 0;
+.modal.body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.modal p {
-  margin-bottom: 0;
+.modal-header {
+  background-color: whitesmoke;
+}
+
+.pokemon-list {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.navbar {
+  background: #3B4CCA;
+}
+
+h2 {
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+p {
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
 }

@@ -74,16 +74,20 @@ let pokemonRepository = (function () {
 		modalBody.innerHTML = '';
 		
 		let imageElement = document.createElement('img');
-		imageElement.src = text.imageURL;
+		imageElement.src = text.imageUrl;
+		imageElement.classList.add('photo');
 		
 		let heightElement = document.createElement('p');
 		heightElement.innerText = 'Height: ' + text.height;
+		heightElement.classList.add('height');
 		
 		let weightElement = document.createElement('p');
 		weightElement.innerText = 'Weight: ' + text.weight;
+		weightElement.classList.add('weight');
 		
 		let typesElement = document.createElement('p');
 		typesElement.innerText = 'Types: ' + text.types;
+		typesElement.classList.add('types');
 		
 		modalBody.append(imageElement);
 		modalBody.append(heightElement);

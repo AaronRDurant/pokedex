@@ -22,7 +22,7 @@ let pokemonRepository = (function () {
 		listItem.classList.add('list-group-item', 'border-0', 'bg-transparent');
 		listItem.appendChild(button);
 		pokemonList.appendChild(listItem);
-		button.addEventListener('click', function (event) {
+		button.addEventListener('click', function () {
 			showDetails(pokemon);
 		});
 	}
